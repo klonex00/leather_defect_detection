@@ -1,1 +1,3 @@
 *.mov
+.DS_Store
+ui/.DS_Store

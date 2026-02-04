@@ -1,0 +1,34 @@
+
+🧠 1. Start the Flask Backend
+
+Make sure you’re in the project folder where app.py is located.
+
+# (Optional) Activate virtual environment
+conda activate leather_defect  # or source venv/bin/activate if using venv
+
+# Run Flask backend
+python app.py
+
+✅ Flask will start on http://0.0.0.0:9001 or http://<your-local-IP>:9001
+
+🌐 2. Run the Next.js React Frontend
+
+Open a second terminal, go to your frontend ui/ folder, and run:
+
+cd ui
+
+# Install dependencies (only once)
+npm install
+
+# Start the frontend
+npm run dev
+
+✅ Visit http://localhost:3000 in your browser
+  
+  note:if chnaged network then need to chnage ip from 
+  get from esp32 -> paste it on flask app.py
+  then get run flask app.py ->get ip paste it -> ui 
+  in ui we have page.tsx(two files )
+  1.page.tsx inide app (is HOMEPAGE)
+  2.page.tsx inide upload  
+  update const BACKEND_URL = "http://172.20.10.5:9001" in both from flask app terminal
